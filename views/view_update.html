@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agence Immobilière</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="/css/stylecss.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="javascript:">Formulaire d'annonce Agence Immobilière</a>
+          <a class="navbar-brand" href="\annonces">Liste des annonces</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <form class="col-lg-5" action="/update" method="post">
+        <div class="form-group">
+          <label for="titre">Titre : </label>
+          <input id="titre" name="titre" type="text" class="form-control" required="true" placeholder="Titre d'annonce">
+          <label for="prix">Prix : </label>
+          <div class="input-group">
+          <input id="prix" name="prix" type="number" class="form-control" required="true" placeholder="Prix">
+          <div class="input-group-addon">€</div>
+          </div>
+          <label for="email">Email : </label>
+          <input id="email" name="email" type="email" class="form-control" required="true" placeholder="example@gmail.com">
+          <label for="ville">Ville : </label>
+          <input id="ville" name="ville" type="text" class="form-control" required="true" placeholder="Ville">
+          <label for="adresse">Adresse : </label>
+          <input id="adresse" name="adresse" type="text" class="form-control" required="true" placeholder="Adresse">
+          <label for="Dateannonce">Date : </label>
+          <input id="Dateannonce" name="Dateannonce" type="date" class="form-control" required="true" placeholder="Date">
+          <label for="surface">Surface : </label>
+          <div class="input-group">
+          <input id="surface" name="surface" type="text" class="form-control" required="true" placeholder="Surface">
+          <div class="input-group-addon">m²</div>
+          </div>
+          <label for="typeBien">Type de Bien : </label>
+          <select id="typeBien" name="typeBien" class="form-control">
+              <option>Choisissez</option>
+              <option value="appartement">appartement</option>
+              <option value="maison">maison</option>
+              <option value="terrain">terrain</option>
+          </select>
+          <label for="classe">Classe énergétique : </label>
+          <select id="classe" name="classe" class="form-control" >
+              <option>Choisissez</option>
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+              <option value="c">D</option>
+              <option value="c">E</option>
+          </select>
+
+          <label for="plus">Plus : </label>
+          <select id="plus" name="plus" class="form-control" multiple="">
+            <option value="cave" >cave</option>
+            <option value="garage">garage</option>
+            <option value="terrasse">terrasse</option>
+            <option value="jacuzzi">jacuzzi</option>
+
+          </select>
+
+          <label for="description">Déscription de l'annonce : </label>
+          <textarea id="description" name="description" type="textarea" rows="6" class="form-control" placeholder="Déscription de votre annonce"></textarea>
+        </div>
+        <section id="wrapper">
+          <article>
+          <div id="holder">  </div>
+          <p id="filereader">File API & FileReader API not supported</p>
+          <p id="formdata">XHR2's FormData is not supported</p>
+          <p id="progress">XHR2's upload progress isn't supported</p>
+          </article>
+          <script type="text/javascript" src="public/js/script.js"></script>
+        </section>
+        <button type="submit" class="btn btn-primary" value="modifier" >Modifier</button>
+    </form>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    </div>
+  <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>

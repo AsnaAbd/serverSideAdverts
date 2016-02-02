@@ -1,0 +1,24 @@
+<h3>Posts</h3>
+<%if (typeof posts != 'undefined') { %>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th>titre</th>
+              <th>prix</th>
+              <th>created</th>
+            </tr>
+        </thead>
+        <tbody>
+        <% i = 1 %>
+        <% (posts).forEach(function(post){ %>
+            <%if (typeof post != 'undefined') { %>
+                <tr>
+                    <td><%= i++ %></td>
+                    <td><%= post.titre %></td>
+                    <td><%= post.prix %></td>
+                </tr>
+             <% } %>
+        <% });%>
+        </tbody>
+    </table>
+<% } %>
